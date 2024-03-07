@@ -4,15 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8b9ce83-f369-4df1-bd97-dd78bc16d57a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LAB002_StaticClass/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/OBJECT_REFERENCE/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/OOP015/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/STRING004/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="b8b9ce83-f369-4df1-bd97-dd78bc16d57a" name="Changes" comment="new updates">
+      <changelist_data name="VinhSeo" email="vinhzz1508@gmail.com" />
+      <change afterPath="$PROJECT_DIR$/src/ELAB2302/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Test/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Test/Main1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Test/Main2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Test/Main3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Test/Main4.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ELAB23_03/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ELAB23_03/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ELAB2315/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ELAB2315/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,11 +29,16 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="VinhSeo &lt;vinhzz1508@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2cZMFy5N52jgfIUzetBxxuwDItQ" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -44,12 +50,16 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
+    "Application.Main1.executor": "Run",
+    "Application.Main2.executor": "Run",
+    "Application.Main3.executor": "Run",
+    "Application.Main4.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/maidu/OneDrive/Desktop/Java_PTIT",
+    "last_opened_file_path": "C:/Users/maidu/OneDrive/Desktop/Security-in-IoT-Devices-using-blockchain",
     "run.code.analysis.last.selected.profile": "pProject Default"
   }
 }]]></component>
@@ -70,5 +80,57 @@
       <updated>1708314549973</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="master" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="main" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/main" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="new updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="new updates" />
   </component>
 </project>
