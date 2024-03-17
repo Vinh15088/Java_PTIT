@@ -6,13 +6,20 @@ import java.util.ArrayList;
 class Student {
     protected String name;
     protected int age;
+    protected static int studentCount = 0;
 
     public Student(String name, int age) {
         this.name = name;
         this.age = age;
+        studentCount++;
     }
+
     void display() {
         System.out.println(name);
+    }
+
+    public static int getStudentCount() {
+        return studentCount;
     }
 }
 
@@ -32,13 +39,14 @@ public class Main {
             Student student = new Student(name, ageNew);
             students.add(student);
         }
-        int count = 0;
+
         for(Student student:students) {
             if(student.age >= 18) {
                 student.display();
             }
-            count++;
         }
+
+        int count = Student.getStudentCount();
         System.out.println(count);
     }
 }

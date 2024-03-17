@@ -19,7 +19,12 @@ public class Main {
         for(int i=0; i<t; i++) {
             String [] line = scanner.nextLine().split(" ");
             int [] nums = new int[line.length];
-            
+
+            if(nums.length < 2) {
+                System.out.println(0);
+                continue;
+            }
+
             for(int j=0; j<line.length; j++) {
                 nums[j] = Integer.parseInt(line[j]);
             }

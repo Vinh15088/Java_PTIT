@@ -83,16 +83,20 @@ public class Main {
             if (line1.isEmpty()) {
                 break;
             }
+
+            // check ko can
             if(line.length < 4) {
-                System.out.println("Invalid input");
+                System.out.println("invalid input");
                 return;
             }
 
             String idAccount = line[0];
+            // check ko can
             if(idAccount.length() != 3) {
-                System.out.println("Invalid input");
+                System.out.println("invalid input");
                 return;
             }
+
             String choice = line[1];
             String idAccount1 = line[2];
             String idShare = line[3];
@@ -109,23 +113,60 @@ public class Main {
 
 //            System.out.println(account.getId() + " " + account.getName());
 
+            // check ko can
             if(account == null) {
-                System.out.println("Invalid input");
+                System.out.println("invalid input");
                 return;
             }
 
             if(choice.equals("Add")) {
+                // check ko can
                 if(ngayGhiChu.length() != 7) {
-                    System.out.println("Invalid input");
+                    System.out.println("invalid input");
                     return;
                 }
 
-                String ngayGhiChuNew = ngayGhiChu.substring(3,5) +" " +  ngayGhiChu.substring(0,3) + " " + ngayGhiChu.substring(5,7);
+//                String mmm = ngayGhiChu.substring(0,3);
+//                String dd = ngayGhiChu.substring(3,5);
+//                String yy = ngayGhiChu.substring(5,7);
+//
+//                boolean isAllLetters = true;
+//                boolean isAllDigitsDD = true;
+//                boolean isAllDigitsYY = true;
+//
+//                for (char c : mmm.toCharArray()) {
+//                    if (!Character.isLetter(c)) {
+//                        isAllLetters = false;
+//                        break;
+//                    }
+//                }
+//
+//                for (char c : dd.toCharArray()) {
+//                    if (!Character.isDigit(c)) {
+//                        isAllDigitsDD = false;
+//                        break;
+//                    }
+//                }
+//
+//                for (char c : yy.toCharArray()) {
+//                    if (!Character.isDigit(c)) {
+//                        isAllDigitsYY = false;
+//                        break;
+//                    }
+//                }
+//
+//                if(isAllDigitsDD == false || isAllDigitsYY == false || isAllLetters == false) {
+//                    System.out.println("invalid input");
+//                    return;
+//                }
+
+                String ngayGhiChuNew = ngayGhiChu.substring(3,5) + " " +  ngayGhiChu.substring(0,3) + " " + ngayGhiChu.substring(5,7);
                 account.addGhiChu(ngayGhiChuNew, noiDung);
             }
             else if(choice.equals("Share")) {
+                // check ko can
                 if(line.length != 4) {
-                    System.out.println("Invalid input");
+                    System.out.println("invalid input");
                     return;
                 }
 
@@ -137,7 +178,7 @@ public class Main {
                     }
                 }
                 if(anotherAccount == null) {
-                    System.out.println("Invalid input");
+                    System.out.println("invalid input");
                     return;
                 }
 
@@ -145,7 +186,7 @@ public class Main {
                 account.shareGhiChu(anotherAccount, ghiChuId-1);
             }
             else {
-                System.out.println("Invalid input");
+                System.out.println("invalid input");
                 return;
             }
         }
@@ -161,12 +202,12 @@ public class Main {
 //                }
 //            }
             System.out.println("Account: " + account.getName());
-                for(note newNote: account.getDsGhiChu()) {
-                    String ghiChu = newNote.getNgayGhiChu();
-                    String noiDung = newNote.getNoiDung();
+            for(note newNote: account.getDsGhiChu()) {
+                String ghiChu = newNote.getNgayGhiChu();
+                String noiDung = newNote.getNoiDung();
 
-                    System.out.println(ghiChu + " | " + noiDung);
-                }
+                System.out.println(ghiChu + " | " + noiDung);
+            }
         }
     }
 }

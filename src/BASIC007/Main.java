@@ -19,8 +19,8 @@ public class Main {
         
         for(int i=0; i<t; i++){
             int year = scanner.nextInt();
-            
-            if((year % 400 != 0 && year % 100 == 0) || year % 4 == 0) {
+
+            if(year % 400 == 0 || (year % 100 != 0 && year % 4 == 0)) {
                 System.out.println(year + " : Leap-year");
             }
             else System.out.println(year + " : Non Leap-year");

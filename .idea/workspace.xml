@@ -6,14 +6,25 @@
   <component name="ChangeListManager">
     <list default="true" id="b8b9ce83-f369-4df1-bd97-dd78bc16d57a" name="Changes" comment="new updates">
       <changelist_data name="VinhSeo" email="vinhzz1508@gmail.com" />
-      <change afterPath="$PROJECT_DIR$/src/ELAB2302/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Test/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Test/Main1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Test/Main2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Test/Main3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Test/Main4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ELAB2315/Main1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LAB02_FightBooking/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/STACK001/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/STACK001/Main1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Test/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Practice/BASIC007/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_Practice/BASIC007/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Practice/BASIC011/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_Practice/BASIC011/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Practice/ELAB2302/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_Practice/ELAB2302/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Practice/ELAB2302/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_Practice/ELAB2302/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Practice/LAB002_StaticClass/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_Practice/LAB002_StaticClass/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Practice/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_Practice/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BASIC007/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BASIC007/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BASIC011/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BASIC011/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ELAB2302/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ELAB2302/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ELAB2315/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ELAB2315/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LAB002_StaticClass/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LAB002_StaticClass/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test/Exam.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test/Exam.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,14 +60,18 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.LAB02_FightBooking.Main.executor": "Run",
+    "Application.Main (1).executor": "Run",
     "Application.Main.executor": "Run",
     "Application.Main1.executor": "Run",
     "Application.Main2.executor": "Run",
     "Application.Main3.executor": "Run",
     "Application.Main4.executor": "Run",
+    "Application.Test.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "deletionFromPopupRequiresConfirmation": "false",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/maidu/OneDrive/Desktop/Security-in-IoT-Devices-using-blockchain",

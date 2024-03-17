@@ -57,8 +57,12 @@ public class Main {
             ArrayList<String> result = new ArrayList<>();
             int a = 0;
             while (a < line.length) {
-                if (!isNumeric(line[a]) && a + 1 < line.length && !isNumeric(line[a + 1])) {
-                    result.add(line[a] + " " +  line[a + 1]);
+                if (!isNumeric(line[a]) && a + 2 < line.length && !isNumeric(line[a+1]) && !isNumeric(line[a+2])) {
+                    result.add(line[a] + " " +  line[a+1] + " " + line[a+2]);
+                    a += 3;
+                }
+                else if (!isNumeric(line[a]) && a + 1 < line.length && !isNumeric(line[a+1])) {
+                    result.add(line[a] + " " +  line[a+1]);
                     a += 2;
                 } else {
                     result.add(line[a]);
@@ -89,28 +93,38 @@ public class Main {
             String [] line2 = scanner.nextLine().split(" ");
             int m = Integer.parseInt(line2[0]);
 
-            for(int j=1; j<line2.length; j++) {
+            outter:for(int j=1; j<line2.length; j++) {
                 if(line2[j].equals("rut") || line2[j].equals("nap")) {
                     int newId = Integer.parseInt(line2[j+1]);
                     BigInteger tien = new BigInteger(line2[j+2]);
 
                     if(line2[j].equals("rut")) {
-                        list.get(newId-1).sub(tien);
+                        if (tien.compareTo(list.get(newId - 1).getSoDu()) > 0) {
+                            continue outter;
+                        }
+                        else {
+                            list.get(newId-1).sub(tien);
+                        }
                     }
 
                     if(line2[j].equals("nap")) {
                         list.get(newId-1).adds(tien);
                     }
-                    j += 2;
+//                    j += 2;
                 }
                 if(line2[j].equals("chuyen")) {
                     int newId1 = Integer.parseInt(line2[j+1]);
                     int newId2 = Integer.parseInt(line2[j+2]);
                     BigInteger tien = new BigInteger(line2[j+3]);
 
-                    list.get(newId1-1).sub(tien);
-                    list.get(newId2-1).adds(tien);
-                    j += 3;
+                    if(tien.compareTo(list.get(newId1-1).getSoDu()) > 0) {
+                        continue outter;
+                    }
+                    else {
+                        list.get(newId1-1).sub(tien);
+                        list.get(newId2-1).adds(tien);
+                    }
+//                    j += 3;
                 }
             }
 
