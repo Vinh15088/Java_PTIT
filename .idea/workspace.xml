@@ -4,44 +4,71 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8b9ce83-f369-4df1-bd97-dd78bc16d57a" name="Changes" comment="new updates">
-      <changelist_data name="VinhSeo" email="vinhzz1508@gmail.com" />
-      <change afterPath="$PROJECT_DIR$/src/Bai24/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ELAB2308/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ELAB2310/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ELAB2311/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ELAB2314/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/INHERITANCE006/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/INTERFACE001/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/INTERFACE002/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LAB01/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LAB01_ClassMain/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LAB01_TwoSum/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LAB02/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/OOP004/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/OOP005/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/STRING/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/STRING001/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/STRING002/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/STRING003/Main.java" afterDir="false" />
+    <list default="true" id="b8b9ce83-f369-4df1-bd97-dd78bc16d57a" name="Changes" comment="update new practices">
+      <change afterPath="$PROJECT_DIR$/src/CONTEST006_TienNong/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/INHERITANCE002_ChiecHop/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/INHERITANCE007_TestQuestions/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LAB01_Debug/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Test/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_Practice/COLLECTION002/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_Practice/COLLECTION002/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_Practice/STRING005/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_Practice/STRING005/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_Practice/Test/Main3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_Practice/Test/hehe.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/build-impl.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/build-impl.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Practice/Account.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Practice/ELAB2302/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_Practice/ELAB2302/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Practice/ELAB2302/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_Practice/ELAB2302/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Practice/ELAB2315/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_Practice/ELAB2315/Account.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Practice/ELAB2315/Main1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Practice/ELAB2315/Note.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_Practice/ELAB2315/Note.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Practice/EXCEPTION002/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_Practice/EXCEPTION002/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Practice/INHERTANCE003/DiscountBill.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_Practice/INHERTANCE003/DiscountBill.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Practice/INHERTANCE003/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_Practice/INHERTANCE003/Employee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Practice/INHERTANCE003/GroceryBill.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_Practice/INHERTANCE003/GroceryBill.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Practice/INHERTANCE003/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_Practice/INHERTANCE003/Item.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Practice/INHERTANCE003/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_Practice/INHERTANCE003/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Practice/LAB002_StaticClass/Main$Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_Practice/LAB002_StaticClass/Main$Account.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Practice/LAB002_StaticClass/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_Practice/LAB002_StaticClass/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Practice/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Practice/OBJECT_REFERENCE/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_Practice/OBJECT_REFERENCE/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Practice/OBJECT_REFERENCE/Song.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_Practice/OBJECT_REFERENCE/Song.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Practice/note.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Java_Practice/test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/COLLECTION002/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/COLLECTION002/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/STRING005/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/STRING005/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test/Exam.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test/Main1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test/Main2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test/Main2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test/Main3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test/Main4.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test/hehe.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test/hehe.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/COLLECTION001/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/COLLECTION002/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/COLLECTION003/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ELAB2302/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ELAB2308/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ELAB2309/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ELAB2310/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ELAB2311/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ELAB2312/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ELAB2314/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ELAB2315/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ELAB2315/Main1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ELAB23_03/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EXCEPTION001/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EXCEPTION002/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EXCEPTION003/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EXCEPTION004/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/INHERTANCE001/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/INHERTANCE003/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/INTERFACE001/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/INTERFACE002/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LAB002_StaticClass/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LAB002_StaticClass/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LAB01_BigDec/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LAB01_BigDec/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LAB02/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LAB02/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/OBJECT_REFERENCE/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/OBJECT_REFERENCES002/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/OOP001/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/OOP002/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/OOP005/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/OOP009/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/OOP009/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/OOP009/Point.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/OOP015/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/STACK001/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/STACK001/Main1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/STRING/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/STRING005/Main.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Test/test.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,6 +91,7 @@
         <option value="VinhSeo &lt;vinhzz1508@gmail.com&gt;" />
       </list>
     </option>
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
@@ -79,6 +107,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Application.INHERTANCE003.Main.executor&quot;: &quot;Run&quot;,
     &quot;Application.LAB02_FightBooking.Main.executor&quot;: &quot;Run&quot;,
     &quot;Application.Main (1).executor&quot;: &quot;Run&quot;,
     &quot;Application.Main.executor&quot;: &quot;Run&quot;,
@@ -86,6 +115,9 @@
     &quot;Application.Main2.executor&quot;: &quot;Run&quot;,
     &quot;Application.Main3.executor&quot;: &quot;Run&quot;,
     &quot;Application.Main4.executor&quot;: &quot;Run&quot;,
+    &quot;Application.OBJECT_REFERENCES002.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.STACK001.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Test.Main.executor&quot;: &quot;Run&quot;,
     &quot;Application.Test.executor&quot;: &quot;Run&quot;,
     &quot;Application.test.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
@@ -95,9 +127,30 @@
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/maidu/OneDrive - ptit.edu.vn/ALL_FOLDER/LearnJava&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.gutterIcons&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ELAB2313.Main" />
+      <module name="Java_Practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ELAB2313.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -114,6 +167,15 @@
       <option name="presentableId" value="Default" />
       <updated>1708314549973</updated>
     </task>
+    <task id="LOCAL-00001" summary="update new practices">
+      <option name="closed" value="true" />
+      <created>1714817002788</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1714817002788</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -166,6 +228,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="new updates" />
-    <option name="LAST_COMMIT_MESSAGE" value="new updates" />
+    <MESSAGE value="update new practices" />
+    <option name="LAST_COMMIT_MESSAGE" value="update new practices" />
   </component>
 </project>

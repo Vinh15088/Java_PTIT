@@ -1,138 +1,179 @@
 package LAB002_StaticClass;
 
-import java.util.Scanner;
 import java.math.BigInteger;
 import java.util.ArrayList;
-import java.util.regex.Pattern;
-
-
+import java.util.Scanner;
 
 public class Main {
-    static class Account {
-        private String id;
-        private String name;
-        private BigInteger soDu;
-
-        public Account(String id, String name, BigInteger soDu) {
-            this.id = id;
-            this.name = name;
-            this.soDu = soDu;
-        }
-
-        String getId() {
-            return this.id;
-        }
-
-        String getName() {
-            return this.name;
-        }
-
-        BigInteger getSoDu() {
-            return this.soDu;
-        }
-
-        public void adds(BigInteger obj) {
-            this.soDu = this.soDu.add(obj);
-        }
-
-        public void sub(BigInteger obj) {
-            this.soDu = this.soDu.subtract(obj);
-        }
-        @Override
-        public String toString() {
-                return  this.id + ", " + this.name + ", " + this.soDu;
-        }
-    }
-    public static boolean isNumeric(String str) {
-        return str.matches("\\d+");
-    }
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int t = scanner.nextInt();
-        scanner.nextLine();
+        Scanner sc = new Scanner(System.in);
+        int test = sc.nextInt();
+        sc.nextLine();
+        ArrayList<Account> list_Acc = new ArrayList<Account>();
+        while(test-- > 0){
+            String init_Account = sc.nextLine();
+            CreateAcc(init_Account, list_Acc);
 
-        for(int i=0; i<t; i++) {
-            String [] line = scanner.nextLine().split(" ");
-
-            ArrayList<String> result = new ArrayList<>();
-            int a = 0;
-            while (a < line.length) {
-                if (!isNumeric(line[a]) && a + 2 < line.length && !isNumeric(line[a+1]) && !isNumeric(line[a+2])) {
-                    result.add(line[a] + " " +  line[a+1] + " " + line[a+2]);
-                    a += 3;
+            if(!sc.hasNextLine()){
+                for(Account acc : list_Acc){
+                    System.out.print(acc.toString());
                 }
-                else if (!isNumeric(line[a]) && a + 1 < line.length && !isNumeric(line[a+1])) {
-                    result.add(line[a] + " " +  line[a+1]);
-                    a += 2;
-                } else {
-                    result.add(line[a]);
-                    a++;
-                }
+                return;
             }
 
-            String[] line1 = result.toArray(new String[0]);
-
-            int n = Integer.parseInt(line1[0]);
-
-            ArrayList<Account> list = new ArrayList<>();
-
-            for(int j=0; j<n; j++) {
-                String newId;
-                if(j>=0 && j<=8) {
-                    newId = "00" + String.valueOf(j+1);
-                }
-                else if (j>=10 && j<=98) {
-                    newId = "0" + String.valueOf(j+1);
-                }
-                else {
-                    newId = String.valueOf(j+1);
-                }
-                list.add(new Account(newId, line1[j*2+1], (new BigInteger(line1[j*2 + 2]))));
+            String transactions = sc.nextLine();
+            thucThiLenh(transactions, list_Acc);
+            for(Account acc : list_Acc){
+                System.out.print(acc.toString());
             }
-
-            String [] line2 = scanner.nextLine().split(" ");
-            int m = Integer.parseInt(line2[0]);
-
-            outter:for(int j=1; j<line2.length; j++) {
-                if(line2[j].equals("rut") || line2[j].equals("nap")) {
-                    int newId = Integer.parseInt(line2[j+1]);
-                    BigInteger tien = new BigInteger(line2[j+2]);
-
-                    if(line2[j].equals("rut")) {
-                        if (tien.compareTo(list.get(newId - 1).getSoDu()) > 0) {
-                            continue outter;
-                        }
-                        else {
-                            list.get(newId-1).sub(tien);
-                        }
-                    }
-
-                    if(line2[j].equals("nap")) {
-                        list.get(newId-1).adds(tien);
-                    }
-//                    j += 2;
-                }
-                if(line2[j].equals("chuyen")) {
-                    int newId1 = Integer.parseInt(line2[j+1]);
-                    int newId2 = Integer.parseInt(line2[j+2]);
-                    BigInteger tien = new BigInteger(line2[j+3]);
-
-                    if(tien.compareTo(list.get(newId1-1).getSoDu()) > 0) {
-                        continue outter;
-                    }
-                    else {
-                        list.get(newId1-1).sub(tien);
-                        list.get(newId2-1).adds(tien);
-                    }
-//                    j += 3;
-                }
-            }
-
-            for(Account x : list) {
-                System.out.print("[");
-                System.out.print(x.toString());
-                System.out.print("]");
+            System.out.println();
+            list_Acc.clear();
+        }
+    }
+    public static boolean checkStringDigit(String s){
+        for(int i = 0; i < s.length(); i++){
+            if(!Character.isDigit(s.charAt(i))) {
+                return false;
             }
         }
+        return true;
+    }
+    public static boolean checkStringLetter(String s){
+        for(int i = 0; i < s.length(); i++){
+            if(!Character.isLetter(s.charAt(i))) {
+                return false;
+            }
+        }
+        return true;
+    }
+    public static void CreateAcc(String init_Account, ArrayList<Account> list_acc){
+        String[] arr_Init_Account = init_Account.split("\\s+");
+        int id = 1;
+        int slgTaiKhoan = Integer.parseInt(arr_Init_Account[0]);
+        String name = "";
+
+        for(int i = 1; i < arr_Init_Account.length; i++){
+            if(checkStringLetter(arr_Init_Account[i])){
+                name = name + " " + arr_Init_Account[i];
+            }else {
+                if(!name.equals("")){
+                    BigInteger soDuTaiKhoan = new BigInteger(arr_Init_Account[i]);
+                    list_acc.add(new Account(id,name, soDuTaiKhoan));
+                    name = "";
+                    id++;
+                }
+            }
+        }
+
+    }
+    public static void thucThiLenh(String transactions, ArrayList<Account> list_acc){
+        String[] arr_Transactions = transactions.split("\\s+");
+        int slgLenh = Integer.parseInt(arr_Transactions[0]);
+        int index = 1;
+        while (index < arr_Transactions.length){
+            if(!checkStringLetter(arr_Transactions[index]))
+            {
+                index++;
+            }else {
+                if(arr_Transactions[index].equals("nap")){
+                    int id = Integer.parseInt(arr_Transactions[index+1]);
+                    BigInteger tien = new BigInteger(arr_Transactions[index+2]);
+                    if(id <= list_acc.size()){
+                        list_acc.get(id-1).napTien(tien);
+                    }
+                    index+=3;
+                    continue;
+                }
+                if(arr_Transactions[index].equals("rut")){
+                    int id = Integer.parseInt(arr_Transactions[index+1]);
+                    BigInteger tien = new BigInteger(arr_Transactions[index+2]);
+                    if(id <= list_acc.size()){
+                        list_acc.get(id-1).rutTien(tien);
+                    }
+                    index+=3;
+                    continue;
+                }
+                if(arr_Transactions[index].equals("chuyen")){
+                    int id = Integer.parseInt(arr_Transactions[index+1]);
+                    int id_nhan = Integer.parseInt(arr_Transactions[index+2]);
+                    BigInteger tien = new BigInteger(arr_Transactions[index+3]);
+                    if(id == id_nhan){
+                        index+=4;
+                        continue;
+                    }
+                    if(id <= list_acc.size() && id_nhan <= list_acc.size())
+                    {
+                        list_acc.get(id-1).chuyenTien(list_acc.get(id_nhan-1), tien);
+                    }
+                    index+=4;
+                    continue;
+                }
+//                index+=3;
+            }
+
+        }
+    }
+    static class Account{
+        private int id;
+        private String name;
+        private BigInteger accountBalance;
+
+        public Account(){}
+        public Account(int id, String name, BigInteger accountBalance){
+            this.id = id;
+            this.name = name.trim();
+            this.accountBalance = accountBalance;
+        }
+        //getter method
+        public void setId(int id) {
+            this.id = id;
+        }
+
+        public void setName(String name) {
+            this.name = name;
+        }
+
+        public void setAccountBalance(BigInteger accountBalance) {
+            this.accountBalance = accountBalance;
+        }
+        //getter method
+        public String getId() {
+            String idAccount = String.valueOf(this.id);
+            if(this.id < 10) return "00" + idAccount;
+            if(this.id >= 10 && this.id < 100) return "0" + idAccount;
+            return  idAccount;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public BigInteger getAccountBalance() {
+            return accountBalance;
+        }
+        public void napTien(BigInteger soTien){
+            this.accountBalance = this.accountBalance.add(soTien);
+        }
+        public void rutTien(BigInteger soTien){
+            if(this.accountBalance.compareTo(soTien) < 0){
+                return;
+            }else {
+                this.accountBalance = this.accountBalance.subtract(soTien);
+            }
+
+        }
+        public void chuyenTien(Account acc_other, BigInteger soTien){
+            if(this.accountBalance.compareTo(soTien) < 0){
+                return;
+            }else {
+                acc_other.accountBalance = acc_other.accountBalance.add(soTien);
+                this.accountBalance = this.accountBalance.subtract(soTien);
+            }
+        }
+
+        public String toString(){
+            return "[" + this.getId() + ", " + this.name + ", " + this.accountBalance + "]";
+        }
+
     }
 }

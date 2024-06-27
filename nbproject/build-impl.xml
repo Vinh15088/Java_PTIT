@@ -263,7 +263,7 @@ is divided into following sections:
         <condition property="junit.available">
             <or>
                 <available classname="org.junit.Test" classpath="${run.test.classpath}"/>
-                <available classname="junit.framework.Test" classpath="${run.test.classpath}"/>
+                <available classname="junit.framework.INHERITANCE002_ChiecHop" classpath="${run.test.classpath}"/>
             </or>
         </condition>
         <condition property="testng.available">
@@ -1639,7 +1639,7 @@ is divided into following sections:
         <mkdir dir="${build.test.results.dir}"/>
     </target>
     <target depends="init,compile-test,-init-test-run-module-properties,-pre-test-run" if="have.tests" name="-do-test-run">
-        <j2seproject3:test includes="${includes}" testincludes="**/*Test.java"/>
+        <j2seproject3:test includes="${includes}" testincludes="**/*INHERITANCE002_ChiecHop.java"/>
     </target>
     <target depends="init,compile-test,-pre-test-run,-do-test-run" if="have.tests" name="-post-test-run">
         <fail if="tests.failed" unless="ignore.failing.tests">Some tests failed; see details above.</fail>
